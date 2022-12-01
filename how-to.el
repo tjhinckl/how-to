@@ -87,5 +87,3 @@
       (while (search-forward "^M" nil t)
         (replace-match "")))
     (org-mode)))
-
-($leader-set-key "so" 'how-to)

@@ -1,0 +1,2 @@
+* How to
+A simple function to query stack overflow and display the results in an org buffer. Just called ~M-x how-to~ and type question.

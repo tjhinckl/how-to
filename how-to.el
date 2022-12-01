@@ -87,3 +87,5 @@
       (while (search-forward "^M" nil t)
         (replace-match "")))
     (org-mode)))
+
+(provide 'how-to)

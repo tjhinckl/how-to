@@ -72,7 +72,7 @@
                                                (thread-last (assoc-default 'body answer)
                                                  (replace-regexp-in-string "<pre><code>" (format "<br>#+begin_src %s<br><pre><code>" language))
                                                  (replace-regexp-in-string "</code></pre>" "</code></pre>#+end_src<br>")
-                                                 (replace-regexp-in-string ($rx "<code>" (group (+ (not (in "<>\n")))) "</code>") "~\\1~")))))
+                                                 (replace-regexp-in-string (rx "<code>" (group (+ (not (in "<>\n")))) "</code>") "~\\1~")))))
                                  answers))))
                    (if (> (length rendered) 5)
                        (append (subseq rendered 0 5)
